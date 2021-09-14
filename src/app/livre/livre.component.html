@@ -1,0 +1,23 @@
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Date</th>
+    <th>Theme</th>
+    <th>Sous Theme</th>
+  </tr>
+
+  <tr *ngFor="let livre of livreService.list">
+    <td>
+      {{ livre.nom }}
+    </td>
+    <td>
+      {{ livre.Date }}
+    </td>
+    <td>
+      {{livre.ThemeName}}
+    </td>
+    <td>
+      {{livre.SousThemeName}}
+    </td>
+  </tr>
+</table>
